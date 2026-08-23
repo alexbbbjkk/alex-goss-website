@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Let's Talk | Alex Goss Digital Marketing</title>
+<meta name="description" content="Get in touch with Alex Goss for digital marketing services.">
+<meta name="keywords" content="contact digital marketer, hire digital marketing consultant UK, book marketing consultation, free marketing chat">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <a href="index.html" class="logo">Alex <span>Goss</span></a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="experience.html">Experience</a>
+      <a href="about-me.html">About Me</a>
+    </nav>
+    <a href="contact.html" class="nav-button">Let's Talk</a>
+    <button class="menu-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow">Let's Talk</span>
+    <h1>Let's talk about your business</h1>
+    <p>Fill in the form, or reach out directly, I usually reply within 1 working day.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container contact-inner">
+    <div class="contact-info">
+      <h2>Get in touch</h2>
+      <p>Whether you know exactly what you need or just want to talk through options, I'm happy to have a free, no-obligation chat.</p>
+      <div class="contact-detail">
+        <div class="icon">✉️</div>
+        <span>alex_goss05@outlook.com</span>
+      </div>
+      <div class="contact-detail">
+        <div class="icon">📍</div>
+        <span>United Kingdom</span>
+      </div>
+    </div>
+    <form class="contact-form" id="contactForm">
+      <!-- Get your free access key at https://web3forms.com (just enter your email, no account needed) -->
+      <input type="hidden" id="access_key" value="08c145d3-248f-4357-890f-692c55c40ff3">
+      <!-- Honeypot field to reduce spam bots — leave this hidden and untouched -->
+      <input type="checkbox" id="botcheck" name="botcheck" style="display:none;">
+
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" required placeholder="Your name">
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" required placeholder="you@example.com">
+      </div>
+      <div class="form-group">
+        <label for="message">What do you need help with?</label>
+        <textarea id="message" required placeholder="Tell me a bit about your business and goals..."></textarea>
+      </div>
+      <button type="submit" class="btn-primary" id="submitBtn" style="width:100%;">Send message</button>
+      <div class="form-note" id="formStatus">I'll never share your details with anyone else.</div>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-top">
+    <div class="footer-logo">Alex Goss</div>
+    <div class="footer-socials">
+      <a href="https://www.linkedin.com/in/alex-goss-290b38336/" target="_blank" rel="noopener" aria-label="Alex Goss on LinkedIn">
+        <svg width="28" height="28" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <rect width="24" height="24" rx="4" fill="#0A66C2"/>
+          <path fill="#fff" d="M7.12 9.4H3.9v10.5h3.22V9.4ZM5.51 5c-1.1 0-1.82.72-1.82 1.67 0 .93.7 1.67 1.78 1.67h.02c1.12 0 1.82-.74 1.82-1.67C7.29 5.72 6.61 5 5.51 5ZM20.45 20h-3.55v-5.63c0-1.34-.02-3.06-1.87-3.06-1.87 0-2.16 1.46-2.16 2.96v5.73H9.32V9.4h3.4v1.44h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.46V20Z"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+  <div class="footer-legal-links">
+  <a href="privacy-policy.html">Privacy Policy</a>
+  <a href="cookie-policy.html">Cookie Policy</a>
+  <a href="terms-and-conditions.html">Terms &amp; Conditions</a>
+</div>
+  <div>&copy; 2026 Alex Goss Digital Marketing. All rights reserved.</div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+  (function () {
+    var form = document.getElementById('contactForm');
+    var status = document.getElementById('formStatus');
+    var submitBtn = document.getElementById('submitBtn');
+
+    function escapeHtml(str) {
+  var div = document.createElement('div');
+  div.textContent = str;
+  return div.innerHTML;
+}
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      // Simple honeypot spam check — if this hidden field got filled in, it's a bot
+      if (document.getElementById('botcheck').checked) {
+        return;
+      }
+
+      var accessKey = document.getElementById('access_key').value;
+      var name = document.getElementById('name').value;
+      var email = document.getElementById('email').value;
+      var message = document.getElementById('message').value;
+
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Sending...';
+      status.textContent = '';
+
+      fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          access_key: accessKey,
+          subject: 'New enquiry from your website contact form',
+          name: name,
+          email: email,
+          message: message
+        })
+      })
+        .then(function (res) { return res.json(); })
+        .then(function (data) {
+          if (data.success) {
+  form.querySelectorAll('.form-group, #submitBtn').forEach(function (el) {
+    el.style.display = 'none';
+  });
+  form.classList.add('form-success');
+  status.removeAttribute('style');
+  status.innerHTML =
+    '<div class="success-icon">' +
+      '<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">' +
+        '<path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>' +
+      '</svg>' +
+    '</div>' +
+    '<h3>Message sent!</h3>' +
+    '<p>Thanks, ' + escapeHtml(name) + ", I'll get back to you within 1 working day.</p>";
+} else {
+            submitBtn.disabled = false;
+            submitBtn.textContent = 'Send message';
+            status.style.color = '#c0392b';
+            status.textContent = 'Something went wrong sending your message — please email me directly at alex_goss05@outlook.com.';
+          }
+        })
+        .catch(function () {
+          submitBtn.disabled = false;
+          submitBtn.textContent = 'Send message';
+          status.style.color = '#c0392b';
+          status.textContent = 'Something went wrong sending your message — please email me directly at alex_goss05@outlook.com.';
+        });
+    });
+  })();
+</script>
+</body>
+</html>
