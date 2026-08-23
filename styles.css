@@ -1080,8 +1080,6 @@ footer .footer-logo {
   margin: 0;
 }
 
-/* ===== Track record boxes (experience.html) ===== */
-/* Append this whole block to the end of your existing styles.css */
 
 .track-record-grid {
   display: grid;
