@@ -34,3 +34,4 @@ if (revealEls.length) {
     revealEls.forEach((el) => el.classList.add('visible'));
   }
 }
+

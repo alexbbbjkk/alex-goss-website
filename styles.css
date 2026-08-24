@@ -1083,16 +1083,15 @@ footer .footer-logo {
 
 .track-record-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: 1fr;
   gap: 24px;
   margin-top: 32px;
 }
 
 .track-record-box {
   display: flex;
-  flex-direction: column;
-  align-items: center;   /* was flex-start — this centers the header row and the CTA link */
-  gap: 16px;
+  align-items: center;
+  width: 100%;
   padding: 32px;
   background: #fff;
   border: 1px solid rgba(0, 0, 0, 0.08);
@@ -1102,31 +1101,33 @@ footer .footer-logo {
   transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
-.track-record-box:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 24px var(--accent);
-  border-color: rgba(0, 0, 0, 0.15);
-}
 .track-record-header {
   display: flex;
   align-items: center;
-  justify-content: center;   /* new — centers the logo+text as a group inside the row */
-  gap: 16px;
   width: 100%;
+  gap: 20px;
 }
+
 .track-record-logo {
-  width: 100%;
-  max-width: 160px;
-  height: 64px;
+  width: 70px;
+  height: 70px;
+  min-width: 70px;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 .track-record-logo img {
-  max-width: 100%;
-  max-height: 100%;
+  width: 100%;
+  height: 100%;
   object-fit: contain;
+}
+
+.track-record-info {
+  flex: 1;
+  text-align: left;
 }
 
 .track-record-info h3 {
@@ -1141,10 +1142,16 @@ footer .footer-logo {
 }
 
 .track-record-cta {
-  margin-top: auto;
+  flex-shrink: 0;
   font-weight: 600;
   font-size: 0.95rem;
-  text-decoration: underline;
+  white-space: nowrap;
+}
+
+.track-record-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px var(--accent);
+  border-color: rgba(0, 0, 0, 0.15);
 }
 
 .back-link {
@@ -1171,10 +1178,14 @@ footer .footer-logo {
 }
 
 .record-hero-logo {
-  height: 56px;
-  width: auto;
-  max-width: 200px;
-  object-fit: contain;
+   width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  overflow: hidden;
+  
 }
 
 .record-hero-brand h1 {
