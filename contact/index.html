@@ -50,7 +50,7 @@
     <form class="contact-form" id="contactForm">
       <!-- Get your free access key at https://web3forms.com (just enter your email, no account needed) -->
       <input type="hidden" id="access_key" value="08c145d3-248f-4357-890f-692c55c40ff3">
-      <!-- Honeypot field to reduce spam bots — leave this hidden and untouched -->
+      <!-- Honeypot field to reduce spam bots, leave this hidden and untouched -->
       <input type="checkbox" id="botcheck" name="botcheck" style="display:none;">
 
       <div class="form-group">
@@ -81,13 +81,16 @@
           <path fill="#fff" d="M7.12 9.4H3.9v10.5h3.22V9.4ZM5.51 5c-1.1 0-1.82.72-1.82 1.67 0 .93.7 1.67 1.78 1.67h.02c1.12 0 1.82-.74 1.82-1.67C7.29 5.72 6.61 5 5.51 5ZM20.45 20h-3.55v-5.63c0-1.34-.02-3.06-1.87-3.06-1.87 0-2.16 1.46-2.16 2.96v5.73H9.32V9.4h3.4v1.44h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.46V20Z"/>
         </svg>
       </a>
+      <a href="https://www.instagram.com/alexgoss.digital/" target="_blank" rel="noopener" aria-label="Alex Goss on Instagram">
+        <img src="/images/instagram.jpg" alt="Instagram" width="28" height="28" loading="lazy">
+      </a>
     </div>
   </div>
   <div class="footer-legal-links">
-  <a href="/privacy-policy/">Privacy Policy</a>
-  <a href="/cookie-policy/">Cookie Policy</a>
-  <a href="/terms-and-conditions/">Terms &amp; Conditions</a>
-</div>
+    <a href="/privacy-policy/">Privacy Policy</a>
+    <a href="/cookie-policy/">Cookie Policy</a>
+    <a href="/terms-and-conditions/">Terms &amp; Conditions</a>
+  </div>
   <div>&copy; 2026 Alex Goss Digital Marketing. All rights reserved.</div>
 </footer>
 
@@ -107,7 +110,7 @@
     form.addEventListener('submit', function (e) {
       e.preventDefault();
 
-      // Simple honeypot spam check — if this hidden field got filled in, it's a bot
+      // Simple honeypot spam check, if this hidden field got filled in, it's a bot
       if (document.getElementById('botcheck').checked) {
         return;
       }
@@ -155,14 +158,14 @@
             submitBtn.disabled = false;
             submitBtn.textContent = 'Send message';
             status.style.color = '#c0392b';
-            status.textContent = 'Something went wrong sending your message — please email me directly at alex_goss05@outlook.com.';
+            status.textContent = 'Something went wrong sending your message, please email me directly at alex_goss05@outlook.com.';
           }
         })
         .catch(function () {
           submitBtn.disabled = false;
           submitBtn.textContent = 'Send message';
           status.style.color = '#c0392b';
-          status.textContent = 'Something went wrong sending your message — please email me directly at alex_goss05@outlook.com.';
+          status.textContent = 'Something went wrong sending your message, please email me directly at alex_goss05@outlook.com.';
         });
     });
   })();

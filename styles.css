@@ -572,7 +572,8 @@ section { padding: 72px 0; }
 
 @media (max-width: 700px) {
   .price-table { font-size: 0.85rem; }
-  .price-table th, .price-table td { padding: 10px 12px; }
+  .price-table th, .price-table td { padding: 10px 12px; text-align: center; }
+  .price-note { display: block; margin-top: 4px; }
 }
 
 /* Proven records / case studies */
@@ -840,6 +841,7 @@ footer .footer-logo {
   .nav-links.open { display: flex; }
   .menu-toggle { display: flex; }
   .nav-button { display: none; }
+  .stat-card { display: none; }
 }
 
 @media (max-width: 480px) {
@@ -1174,7 +1176,7 @@ footer .footer-logo {
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
-  margin: 8px 0;
+  margin: 24px 0 8px;
 }
 
 .record-hero-logo {
@@ -1365,4 +1367,8 @@ footer .footer-logo {
     justify-self: start;
     margin-top: 4px;
   }
+}
+.footer-socials img {
+  border-radius: 4px;
+  object-fit: cover;
 }
