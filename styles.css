@@ -1380,3 +1380,14 @@ footer .footer-logo {
   gap: 16px;
   margin-top: 24px;
 }
+.card-row-center {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 22px;
+}
+
+.card-row-center > .card {
+  flex: 1 1 280px;
+  max-width: 340px;
+}
