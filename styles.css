@@ -1372,3 +1372,11 @@ footer .footer-logo {
   border-radius: 4px;
   object-fit: cover;
 }
+
+.hero-cta-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 24px;
+}
