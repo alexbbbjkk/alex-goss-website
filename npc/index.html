@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
-  <!-- Google tag (gtag.js) -->
+<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3C8ZMF64QB"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-3C8ZMF64QB');
 </script>
 <meta charset="UTF-8">
@@ -15,192 +14,373 @@
 <title>National Parking Control | Alex Goss Digital Marketing</title>
 <meta name="description" content="Two years as in-house Digital Marketer for National Parking Control Group Ltd, the work, the results, and links to see it live.">
 <meta name="keywords" content="National Parking Control, Alex Goss digital marketer UK, digital marketing case study">
-<link rel="stylesheet" href="/styles.css">
+<meta name="theme-color" content="#0F1E21">
+<meta property="og:title" content="National Parking Control | Alex Goss Digital Marketing">
+<meta property="og:description" content="Two years as in-house Digital Marketer for National Parking Control Group Ltd. Social growth, SEO, paid ads and CRM, all live.">
+<meta property="og:type" content="article">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F6F4EF;
+  --surface:#FFFFFF;
+  --onyx:#0F1E21;
+  --stone:#777777;
+  --on-dark:#F6F4EF;
+  --on-dark-muted:#B9B9C4;
+  --accent:#7FE3D6;
+  --accent-hover:#14A69F;
+  --accent-deep:#0E6B6A;
+  --border:#CDEDE8;
+  --gradient-btn:linear-gradient(135deg,#14A69F 0%,#7FE3D6 100%);
+  --gradient-brand:linear-gradient(135deg,#081314 0%,#0E6B6A 40%,#14A69F 70%,#7FE3D6 100%);
+  --radius:22px;
+  --ease:cubic-bezier(.2,.7,.2,1);
+  --display:'Space Grotesk',sans-serif;
+  --body:'Inter',sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:110px}
+body{font-family:var(--body);color:var(--onyx);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+p{color:var(--stone)}
+h1,h2,h3{font-family:var(--display);font-weight:700;line-height:1.08;letter-spacing:-.025em;color:var(--onyx)}
+:focus-visible{outline:3px solid var(--accent-hover);outline-offset:3px;border-radius:8px}
+.container{max-width:1200px;margin:0 auto;padding:0 24px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--onyx);color:var(--on-dark);padding:8px 14px;border-radius:8px;z-index:200}
+.skip:focus{left:8px}
+
+/* Header */
+.site-header{position:sticky;top:14px;width:min(1200px,calc(100% - 32px));margin:14px auto 0;border-radius:999px;background:rgba(15,30,33,.94);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid var(--accent);box-shadow:0 10px 30px rgba(0,0,0,.25);z-index:100}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:8px 8px 8px 28px;width:100%;margin:0;position:relative}
+.logo{font-family:var(--display);font-size:1.4rem;font-weight:700;color:var(--accent)}
+.logo span{color:var(--on-dark)}
+.nav-links{display:flex;gap:30px;font-size:.95rem;font-weight:600}
+.nav-links a{color:var(--on-dark);padding-bottom:4px;border-bottom:2px solid transparent;transition:color .25s,border-color .25s}
+.nav-links a:hover{color:var(--accent);border-bottom-color:var(--accent)}
+.nav-button{background:var(--gradient-btn);color:var(--onyx);padding:10px 22px;border-radius:999px;font-weight:600;font-size:.9rem;white-space:nowrap;font-family:var(--display);transition:filter .25s,transform .25s}
+.nav-button:hover{filter:brightness(1.12);transform:translateY(-1px)}
+.menu-toggle{display:none;flex-direction:column;gap:5px;background:none;border:0;cursor:pointer;padding:10px;min-width:44px;min-height:44px;justify-content:center}
+.menu-toggle span{width:24px;height:2px;background:var(--on-dark);display:block;transition:transform .3s var(--ease),opacity .2s}
+.menu-toggle[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.menu-toggle[aria-expanded="true"] span:nth-child(2){opacity:0}
+.menu-toggle[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+/* Buttons & labels */
+.btn-primary{background:var(--gradient-btn);color:var(--onyx);padding:16px 34px;border-radius:999px;font-weight:700;font-family:var(--display);display:inline-block;transition:transform .25s var(--ease),filter .25s,box-shadow .25s;font-size:1.02rem}
+.btn-primary:hover{filter:brightness(1.08);transform:translateY(-2px);box-shadow:0 14px 34px rgba(20,166,159,.45)}
+.btn-light{background:var(--on-dark);color:var(--onyx);padding:18px 40px;border-radius:999px;font-weight:700;font-family:var(--display);font-size:1.05rem;display:inline-block;transition:transform .3s var(--ease),box-shadow .3s}
+.btn-light:hover{transform:translateY(-3px);box-shadow:0 16px 40px rgba(0,0,0,.35)}
+.eyebrow{display:inline-block;background:var(--gradient-btn);color:var(--onyx);padding:6px 16px;border-radius:999px;font-size:.78rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;font-family:var(--display)}
+.back-link{display:inline-flex;align-items:center;gap:8px;font-size:.92rem;font-weight:600;color:var(--on-dark-muted);margin-bottom:28px;transition:color .2s}
+.back-link:hover{color:var(--accent)}
+
+/* Hero */
+.hero{position:relative;overflow:hidden;background:var(--gradient-brand);color:var(--on-dark);margin-top:-82px;padding:calc(82px + clamp(56px,7vw,96px)) 0 clamp(64px,7vw,88px)}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 90% 0%,rgba(127,227,214,.4),transparent 55%);pointer-events:none}
+.hero::after{content:"";position:absolute;right:-120px;bottom:-180px;width:460px;height:460px;border-radius:50%;border:1.5px solid rgba(240,240,240,.22);box-shadow:0 0 0 60px rgba(240,240,240,.05),0 0 0 130px rgba(240,240,240,.035);pointer-events:none;animation:spin 40s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.hero-inner{position:relative;z-index:1;display:grid;grid-template-columns:auto 1fr;gap:clamp(32px,5vw,64px);align-items:center}
+.hero-logo{width:150px;height:150px;border-radius:32px;background:#fff;padding:22px;object-fit:contain;box-shadow:0 30px 70px rgba(0,0,0,.35)}
+.hero .back-link{color:rgba(240,240,240,.85)}
+.hero .back-link:hover{color:var(--accent)}
+.hero-kicker{display:inline-block;font-size:.8rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--on-dark);margin-bottom:18px;padding:8px 16px;border:1px solid rgba(127,227,214,.3);border-radius:999px}
+.hero h1{font-size:clamp(2.4rem,4.8vw,4rem);line-height:1.02;letter-spacing:-.035em;color:var(--on-dark);margin-bottom:18px}
+.hero-lede{font-size:1.15rem;color:rgba(240,240,240,.94);text-shadow:0 2px 16px rgba(15,30,33,.3);max-width:620px}
+
+/* Results strip */
+.facts{background:var(--surface);border-bottom:1px solid var(--border)}
+.facts-grid{display:grid;grid-template-columns:repeat(3,1fr)}
+.fact{padding:36px 28px;border-left:1px solid var(--border);display:flex;flex-direction:column;gap:6px}
+.fact:first-child{border-left:0}
+.fact-num{font-family:var(--display);font-size:clamp(2.2rem,3.6vw,2.9rem);font-weight:700;letter-spacing:-.03em;background:var(--gradient-btn);-webkit-background-clip:text;background-clip:text;color:transparent;line-height:1}
+.fact-label{font-size:.95rem;color:var(--stone)}
+
+/* Sections */
+section{padding:clamp(72px,9vw,112px) 0}
+.section-alt{background:var(--surface)}
+.head{max-width:700px;margin:0 0 52px}
+.head h2{font-size:clamp(2.1rem,4.2vw,3.1rem);margin:18px 0 14px}
+.head p{font-size:1.06rem}
+
+/* Role panel */
+.role{max-width:820px;margin:0 auto;background:var(--onyx);color:var(--on-dark);border-radius:32px;padding:clamp(36px,5vw,56px);position:relative;overflow:hidden}
+.role::before{content:"";position:absolute;right:-80px;top:-80px;width:280px;height:280px;border-radius:50%;background:radial-gradient(closest-side,rgba(20,166,159,.45),rgba(20,166,159,0));pointer-events:none}
+.role .eyebrow{position:relative}
+.role h2{color:var(--on-dark);font-size:clamp(1.9rem,3.4vw,2.5rem);margin:18px 0 6px;position:relative}
+.role .meta{font-size:.9rem;color:var(--accent);font-weight:600;margin-bottom:24px;position:relative}
+.role p{color:var(--on-dark-muted);margin-bottom:16px;position:relative}
+.role p:last-child{margin-bottom:0}
+
+/* Skill cards */
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:var(--bg);border:1px solid var(--border);border-radius:var(--radius);padding:32px 30px;transition:transform .3s var(--ease),border-color .3s,box-shadow .3s;display:block}
+.card:hover{transform:translateY(-4px);border-color:var(--accent-hover);box-shadow:0 20px 44px rgba(14,107,106,.16)}
+.section-alt .card{background:var(--surface)}
+.card-icon{width:54px;height:54px;border-radius:16px;background:var(--surface);border:1.5px solid var(--accent-hover);display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:22px}
+.card h3{font-size:1.2rem;margin-bottom:10px}
+.card p{font-size:.97rem}
+.card .link-hint{display:inline-block;margin-top:14px;font-size:.85rem;font-weight:600;color:var(--accent-deep)}
+
+/* Results strip (proof) */
+.proof-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:0;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden}
+.proof-item{padding:34px 30px;border-left:1px solid var(--border);display:flex;flex-direction:column;gap:6px}
+.proof-item:first-child{border-left:0}
+.proof-num{font-family:var(--display);font-size:clamp(2.2rem,3.6vw,2.9rem);font-weight:700;letter-spacing:-.03em;background:var(--gradient-btn);-webkit-background-clip:text;background-clip:text;color:transparent;line-height:1}
+.proof-label{font-size:.95rem;color:var(--stone)}
+
+/* CTA band */
+.cta-section{padding-top:0}
+.cta-band{position:relative;overflow:hidden;background:var(--gradient-brand);color:var(--on-dark);border-radius:36px;padding:clamp(56px,7vw,88px) clamp(28px,6vw,80px);display:flex;align-items:center;justify-content:space-between;gap:36px;flex-wrap:wrap;isolation:isolate}
+.cta-band::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 90% 0%,rgba(127,227,214,.4),transparent 55%);z-index:-1}
+.cta-band h2{color:var(--on-dark);font-size:clamp(2.2rem,4.4vw,3.4rem);max-width:18ch;margin-bottom:12px}
+.cta-band p{color:rgba(240,240,240,.88);font-size:1.08rem;max-width:42ch}
+
+/* Footer */
+footer{background:var(--onyx);color:var(--on-dark-muted);padding:60px 0 46px;text-align:center;font-size:.92rem}
+.footer-logo{font-family:var(--display);font-weight:700;font-size:1.5rem;color:var(--on-dark);margin-bottom:18px}
+.footer-logo span{color:var(--accent)}
+.footer-socials{display:flex;justify-content:center;gap:14px;margin-bottom:22px}
+.footer-socials a{width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;border:1px solid rgba(240,240,240,.18);transition:border-color .3s,transform .3s var(--ease)}
+.footer-socials a:hover{border-color:var(--accent);transform:translateY(-3px)}
+.footer-socials img{width:20px;height:20px;border-radius:4px;object-fit:cover}
+.footer-legal-links{display:flex;justify-content:center;gap:26px;flex-wrap:wrap;margin-bottom:16px;font-size:.87rem}
+.footer-legal-links a{color:var(--on-dark-muted);transition:color .2s}
+.footer-legal-links a:hover{color:var(--accent);text-decoration:underline}
+footer .copy{font-size:.82rem;opacity:.7}
+
+/* Reveal */
+.reveal{opacity:0;transform:translateY(36px);transition:opacity .85s var(--ease),transform .85s var(--ease)}
+.reveal.visible{opacity:1;transform:none}
+.d1{transition-delay:.08s}.d2{transition-delay:.16s}.d3{transition-delay:.24s}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .reveal{opacity:1;transform:none}
+  html{scroll-behavior:auto}
+}
+
+/* Responsive */
+@media (max-width:980px){
+  .cards{grid-template-columns:1fr 1fr}
+}
+@media (max-width:820px){
+  .nav-button{display:none}
+  .menu-toggle{display:flex}
+  .nav-links{position:absolute;top:calc(100% + 12px);left:0;right:0;background:var(--onyx);border:1px solid var(--accent);border-radius:24px;flex-direction:column;padding:12px 24px 22px;gap:0;display:none;box-shadow:0 20px 40px rgba(0,0,0,.4)}
+  .nav-links.open{display:flex}
+  .nav-links a{padding:16px 0;border-bottom:1px solid rgba(240,240,240,.08);font-size:1.02rem}
+  .nav-links a:last-child{border-bottom:0}
+  .hero-inner{grid-template-columns:1fr}
+  .hero-logo{width:110px;height:110px;border-radius:26px;padding:16px}
+  .facts-grid,.proof-strip{grid-template-columns:1fr}
+  .fact,.proof-item{border-left:0;border-top:1px solid var(--border)}
+  .fact:first-child,.proof-item:first-child{border-top:0}
+  .cta-band{flex-direction:column;align-items:flex-start}
+}
+@media (max-width:600px){
+  .container{padding:0 20px}
+  .hero{padding-top:calc(82px + 40px)}
+  .cards{grid-template-columns:1fr}
+  .cta-band .btn-light{width:100%;text-align:center}
+}
+</style>
 </head>
 <body>
-<header>
-  <div class="container nav">
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header" id="header">
+  <div class="nav">
     <a href="/home/" class="logo">Alex <span>Goss</span></a>
-    <nav class="nav-links">
+    <nav class="nav-links" id="nav-links" aria-label="Main">
       <a href="/home/">Home</a>
       <a href="/services/">Services</a>
       <a href="/pricing/">Pricing</a>
-      <a href="/experience/">Experience</a>
+      <a href="/experience/" aria-current="page">Experience</a>
       <a href="/about-me/">About Me</a>
     </nav>
     <a href="/contact/" class="nav-button">Let's Talk</a>
-    <button class="menu-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
   </div>
 </header>
-<section class="page-hero">
+
+<main id="main">
+
+<section class="hero">
   <div class="container">
     <a href="/experience/" class="back-link">&larr; Back to Experience</a>
-    <div class="record-hero-brand">
-      <img src="/images/npc-logo.png" alt="National Parking Control Group Ltd logo" class="record-hero-logo">
-    </div>
-    <h1>National Parking Control Group Ltd</h1>
-    <p>Two years as the in-house Digital Marketer, running the day-to-day marketing for a live, operating business.</p>
-  </div>
-</section>
-<section>
-  <div class="container">
-    <div class="results-strip reveal">
-      <div class="result-item">
-        <span class="result-num">3,000+</span>
-        <span class="result-label">Social followers grown, from under 150</span>
-      </div>
-      <div class="result-item">
-        <span class="result-num">2 yrs</span>
-        <span class="result-label">Full-time, in-house digital marketing experience</span>
-      </div>
-      <div class="result-item">
-        <span class="result-num">5</span>
-        <span class="result-label">Disciplines run day-to-day; social, SEO, paid ads, email, CRM</span>
+    <div class="hero-inner">
+      <img src="/images/npc-logo.png" alt="National Parking Control Group Ltd logo" class="hero-logo" width="150" height="150">
+      <div>
+        <span class="hero-kicker">Case study</span>
+        <h1>National Parking Control Group Ltd</h1>
+        <p class="hero-lede">Two years as the in-house Digital Marketer, running the day-to-day marketing for a live, operating business.</p>
       </div>
     </div>
   </div>
 </section>
+
+<div class="facts">
+  <div class="container facts-grid">
+    <div class="fact reveal">
+      <span class="fact-num">3,000+</span>
+      <span class="fact-label">Social followers grown, from under 150</span>
+    </div>
+    <div class="fact reveal d1">
+      <span class="fact-num">2 yrs</span>
+      <span class="fact-label">Full-time, in-house digital marketing experience</span>
+    </div>
+    <div class="fact reveal d2">
+      <span class="fact-num">5</span>
+      <span class="fact-label">Disciplines run day-to-day: social, SEO, paid ads, email and CRM</span>
+    </div>
+  </div>
+</div>
+
 <section class="section-alt">
   <div class="container">
-    <div class="case-card reveal" style="max-width:760px; margin:0 auto;">
-      <div class="case-card-top">
-        <span class="eyebrow">Full-time role</span>
-        <h3>Digital Marketer</h3>
-        <p>National Parking Control Group Ltd &middot; 2 years</p>
-      </div>
-      <div class="case-body">
-        <p>I joined as the company's only in-house digital marketer, responsible for social media, SEO, paid ads, email, and the CRM, with no team to hand things off to and no room for guesswork. Over two years I grew the company's social following from under 150 to over 3,000, ran SEO and Google Ads PPC campaigns that contributed to measurable increases in client acquisition, and built HTML-based e-shots to support outreach, all while managing the day-to-day CRM in HubSpot.</p>
-        <p>It isn't freelance client work yet, but it's real: live campaigns, a real budget, and results a business actually depended on, not a case study written after the fact.</p>
-      </div>
+    <div class="role reveal">
+      <span class="eyebrow">Full-time role</span>
+      <h2>Digital Marketer</h2>
+      <p class="meta">National Parking Control Group Ltd &middot; 2 years</p>
+      <p>I joined as the company's only in-house digital marketer, responsible for social media, SEO, paid ads, email and the CRM, with no team to hand things off to and no room for guesswork. Over two years I grew the company's social following from under 150 to over 3,000, ran SEO and Google Ads PPC campaigns that contributed to measurable increases in client acquisition, and built HTML-based e-shots to support outreach, all while managing the day-to-day CRM in HubSpot.</p>
+      <p>It isn't freelance client work yet, but it's real: live campaigns, a real budget, and results a business actually depended on, not a case study written after the fact.</p>
     </div>
   </div>
 </section>
+
 <section>
   <div class="container">
-    <div class="section-head reveal">
+    <div class="head reveal">
       <span class="eyebrow">What I did there</span>
       <h2>Skills built on the job</h2>
       <p>Everything below was hands-on, day-to-day responsibility, not just supporting work.</p>
     </div>
-    
-    <div class="grid-3">
-        
+    <div class="cards">
       <div class="card reveal">
-  <div class="card-header">
-    <div class="card-icon">📱</div>
-    <h3>Social Media Management</h3>
-  </div>
-  <p>Grew the company's social media following from under 150 to over 3,000 in 12 months.</p>
-</div>
-      <div class="card reveal">
-         <div class="card-header">
-        <div class="card-icon">🔍</div>
+        <div class="card-icon" aria-hidden="true">📱</div>
+        <h3>Social media management</h3>
+        <p>Grew the company's social media following from under 150 to over 3,000.</p>
+      </div>
+      <div class="card reveal d1">
+        <div class="card-icon" aria-hidden="true">🔍</div>
         <h3>SEO</h3>
-        </div>
         <p>Managed SEO campaigns contributing to measurable increases in client acquisition.</p>
       </div>
-      <div class="card reveal">
-         <div class="card-header">
-        <div class="card-icon">🎯</div>
-        <h3>Paid Ads (Google &amp; Meta)</h3>
-         </div>
+      <div class="card reveal d2">
+        <div class="card-icon" aria-hidden="true">🎯</div>
+        <h3>Paid ads (Google &amp; Meta)</h3>
         <p>Managed Google Ads PPC campaigns delivering record results, alongside Meta advertising work.</p>
       </div>
       <div class="card reveal">
-         <div class="card-header">
-        <div class="card-icon">✉️</div>
-        <h3>Content &amp; Email Marketing</h3>
-        </div>
+        <div class="card-icon" aria-hidden="true">✉️</div>
+        <h3>Content &amp; email marketing</h3>
         <p>Developed HTML-based e-shots to support outreach and client engagement.</p>
       </div>
-      <div class="card reveal">
-         <div class="card-header">
-        <div class="card-icon">⚙️</div>
-        <h3>HubSpot Management</h3>
-        </div>
+      <div class="card reveal d1">
+        <div class="card-icon" aria-hidden="true">⚙️</div>
+        <h3>HubSpot management</h3>
         <p>Managed the company's CRM and marketing automation.</p>
       </div>
     </div>
   </div>
 </section>
+
 <section class="section-alt">
   <div class="container">
-    <div class="section-head reveal">
+    <div class="head reveal">
       <span class="eyebrow">See it for yourself</span>
       <h2>Real, live marketing work</h2>
       <p>This is genuine marketing I helped build and run for National Parking Control Group Ltd, live now, not staged for a portfolio. It's company work rather than my own freelance client work, but every link below is real.</p>
     </div>
-    <div class="grid-3">
-         
-      <a href="https://www.nationalparkingcontrol.co.uk" target="_blank" rel="noopener" class="card reveal" style="display:block;">
-        <div class="card-header">
-        <div class="card-icon">🌐</div>
-        <h3>NPC Website</h3>
-      </div>
+    <div class="cards">
+      <a href="https://www.nationalparkingcontrol.co.uk" target="_blank" rel="noopener" class="card reveal">
+        <div class="card-icon" aria-hidden="true">🌐</div>
+        <h3>NPC website</h3>
         <p>The company website I helped shape through SEO and content updates, the real, live result of that work.</p>
+        <span class="link-hint">Visit the site &rarr;</span>
       </a>
-      <a href="https://www.instagram.com/nationalparkingcontrol" target="_blank" rel="noopener" class="card reveal" style="display:block;">
-        <div class="card-header">
-        <div class="card-icon">📸</div>
+      <a href="https://www.instagram.com/nationalparkingcontrol" target="_blank" rel="noopener" class="card reveal d1">
+        <div class="card-icon" aria-hidden="true">📸</div>
         <h3>Instagram</h3>
-      </div>
         <p>NPC's company Instagram page, where I shared updates and client wins to build their professional presence.</p>
+        <span class="link-hint">View on Instagram &rarr;</span>
       </a>
-      <a href="https://www.linkedin.com/company/72041791/" target="_blank" rel="noopener" class="card reveal" style="display:block;">
-        <div class="card-header">
-        <div class="card-icon">💼</div>
+      <a href="https://www.linkedin.com/company/72041791/" target="_blank" rel="noopener" class="card reveal d2">
+        <div class="card-icon" aria-hidden="true">💼</div>
         <h3>LinkedIn</h3>
-        </div>
         <p>NPC's company LinkedIn page, where I shared updates and client wins to build their professional presence.</p>
+        <span class="link-hint">View on LinkedIn &rarr;</span>
       </a>
-      <a href="https://www.nationalparkingcontrol.co.uk/about-us/testimonials" target="_blank" rel="noopener" class="card reveal" style="display:block;">
-        <div class="card-header">
-        <div class="card-icon">⭐</div>
+      <a href="https://www.nationalparkingcontrol.co.uk/about-us/testimonials" target="_blank" rel="noopener" class="card reveal">
+        <div class="card-icon" aria-hidden="true">⭐</div>
         <h3>Testimonials</h3>
-        </div>
-        <p>Genuine feedback from NPC's own clients, published on their site, real proof the work built trust with real customers.</p>
+        <p>Genuine feedback from NPC's own clients, published on their site: real proof the work built trust with real customers.</p>
+        <span class="link-hint">Read testimonials &rarr;</span>
       </a>
-      <a href="https://www.nationalparkingcontrol.co.uk/about-us/case-studies" target="_blank" rel="noopener" class="card reveal" style="display:block;">
-        <div class="card-header">
-        <div class="card-icon">📋</div>
-        <h3>Case Studies</h3>
-        </div>
+      <a href="https://www.nationalparkingcontrol.co.uk/about-us/case-studies" target="_blank" rel="noopener" class="card reveal d1">
+        <div class="card-icon" aria-hidden="true">📋</div>
+        <h3>Case studies</h3>
         <p>In-depth write-ups of NPC's client work, showing the kind of results the wider marketing effort helped deliver.</p>
+        <span class="link-hint">Read case studies &rarr;</span>
       </a>
     </div>
   </div>
 </section>
-<section>
+
+<section class="cta-section">
   <div class="container">
-    <div class="cta-banner reveal">
-      <h2>Ready to put this experience to work for your business?</h2>
-      <p>Let's talk about what's realistic for your goals and budget.</p>
-      <a href="/contact/" class="btn-primary">Book a free chat</a>
+    <div class="cta-band reveal">
+      <div>
+        <h2>Ready to put this experience to work for your business?</h2>
+        <p>Let's talk about what's realistic for your goals and budget.</p>
+      </div>
+      <a href="/contact/" class="btn-light">Book a free chat</a>
     </div>
   </div>
 </section>
+
+</main>
+
 <footer>
-  <div class="footer-top">
-    <div class="footer-logo">Alex Goss</div>
+  <div class="container">
+    <div class="footer-logo">Alex <span>Goss</span></div>
     <div class="footer-socials">
       <a href="https://www.linkedin.com/in/alex-goss-290b38336/" target="_blank" rel="noopener" aria-label="Alex Goss on LinkedIn">
-        <svg width="28" height="28" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <rect width="24" height="24" rx="4" fill="#0A66C2"/>
-          <path fill="#fff" d="M7.12 9.4H3.9v10.5h3.22V9.4ZM5.51 5c-1.1 0-1.82.72-1.82 1.67 0 .93.7 1.67 1.78 1.67h.02c1.12 0 1.82-.74 1.82-1.67C7.29 5.72 6.61 5 5.51 5ZM20.45 20h-3.55v-5.63c0-1.34-.02-3.06-1.87-3.06-1.87 0-2.16 1.46-2.16 2.96v5.73H9.32V9.4h3.4v1.44h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.46V20Z"/>
-        </svg>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7.12 9.4H3.9v10.5h3.22V9.4ZM5.51 5c-1.1 0-1.82.72-1.82 1.67 0 .93.7 1.67 1.78 1.67h.02c1.12 0 1.82-.74 1.82-1.67C7.29 5.72 6.61 5 5.51 5ZM20.45 20h-3.55v-5.63c0-1.34-.02-3.06-1.87-3.06-1.87 0-2.16 1.46-2.16 2.96v5.73H9.32V9.4h3.4v1.44h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.46V20Z"/></svg>
       </a>
       <a href="https://www.instagram.com/alexgoss.digital/" target="_blank" rel="noopener" aria-label="Alex Goss on Instagram">
-        <img src="/images/instagram.jpg" alt="Instagram" width="28" height="28" loading="lazy">
+        <img src="/images/instagram.jpg" alt="" width="20" height="20" loading="lazy">
       </a>
     </div>
+    <div class="footer-legal-links">
+      <a href="/privacy-policy/">Privacy Policy</a>
+      <a href="/cookie-policy/">Cookie Policy</a>
+      <a href="/terms-and-conditions/">Terms &amp; Conditions</a>
+    </div>
+    <div class="copy">&copy; 2026 Alex Goss Digital Marketing. All rights reserved.</div>
   </div>
-  <div class="footer-legal-links">
-    <a href="/privacy-policy/">Privacy Policy</a>
-    <a href="/cookie-policy/">Cookie Policy</a>
-    <a href="/terms-and-conditions/">Terms &amp; Conditions</a>
-  </div>
-  <div>&copy; 2026 Alex Goss Digital Marketing. All rights reserved.</div>
 </footer>
-<script src="/script.js"></script>
+
+<script>
+  // Mobile menu
+  const toggle = document.querySelector('.menu-toggle');
+  const links = document.getElementById('nav-links');
+  toggle.addEventListener('click', () => {
+    const open = links.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open);
+  });
+  links.addEventListener('click', e => {
+    if (e.target.tagName === 'A') { links.classList.remove('open'); toggle.setAttribute('aria-expanded', 'false'); }
+  });
+
+  // Scroll reveal
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(en => { if (en.isIntersecting) { en.target.classList.add('visible'); io.unobserve(en.target); } });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
 </body>
 </html>
