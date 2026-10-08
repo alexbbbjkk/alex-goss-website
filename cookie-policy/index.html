@@ -1,26 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
-  <!-- Google tag (gtag.js) -->
+<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3C8ZMF64QB"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-3C8ZMF64QB');
 </script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Cookie Policy | Alex Goss Digital Marketing</title>
-<meta name="description" content="Cookie Policy for Alex Goss Digital Marketing.">
+<meta name="description" content="Cookie Policy for Alex Goss Digital Marketing: which cookies this site uses, why, and how to manage or opt out of them.">
+<link rel="canonical" href="https://alex-goss.co.uk/cookie-policy/">
 <link rel="stylesheet" href="/styles.css">
+<style>
+  /* Legal layout: contents sidebar + content (Cookie Policy only) */
+  .legal-layout{display:grid;grid-template-columns:240px 1fr;gap:clamp(32px,5vw,72px);align-items:start;max-width:1040px;margin:0 auto}
+  .legal-toc{position:sticky;top:110px;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:24px 22px}
+  .legal-toc h2{font-size:.8rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:12px}
+  .legal-toc ol{list-style:none;display:grid;gap:4px}
+  .legal-toc a{display:block;padding:8px 10px;border-radius:10px;font-size:.92rem;font-weight:600;color:var(--heading);transition:background .2s,color .2s}
+  .legal-toc a:hover{background:rgba(196,181,253,.25);color:var(--accent-deep)}
+  .summary{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--accent-hover);border-radius:var(--radius);padding:26px 28px;margin-bottom:40px}
+  .summary h2{font-size:1.1rem;margin-bottom:12px}
+  .summary ul{margin:0 0 0 20px;color:var(--heading);opacity:.9}
+  .summary li{margin-bottom:8px;font-size:.98rem}
+  .legal-body h2{scroll-margin-top:110px}
+  @media (max-width:900px){
+    .legal-layout{grid-template-columns:1fr}
+    .legal-toc{position:static}
+  }
+</style>
 </head>
 <body>
 <header>
   <div class="container nav">
     <a href="/home/" class="logo">Alex <span>Goss</span></a>
-    <nav class="nav-links">
+    <nav class="nav-links" id="nav-links" aria-label="Main">
       <a href="/home/">Home</a>
       <a href="/services/">Services</a>
       <a href="/pricing/">Pricing</a>
@@ -28,9 +46,11 @@
       <a href="/about-me/">About Me</a>
     </nav>
     <a href="/contact/" class="nav-button">Let's Talk</a>
-    <button class="menu-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
   </div>
 </header>
+
+<main id="main">
 
 <section class="page-hero">
   <div class="container">
@@ -40,51 +60,80 @@
   </div>
 </section>
 
-<section>
-  <div class="container legal-content">
-    <h2>What are cookies</h2>
-    <p>Cookies are small text files placed on your device when you visit a website. They're widely used to make websites work more effectively, and to provide information to the site owner.</p>
+<section style="padding-top:56px">
+  <div class="container">
+    <div class="legal-layout">
 
-    <h2>How this site uses cookies</h2>
-    <p>This site uses the following types of cookies:</p>
-    <ul>
-      <li><strong>Analytics cookies (Google Analytics):</strong> these help me understand how visitors use the site, which pages are viewed, how long visitors stay, and how they found the site, so I can improve it. These cookies collect information in an anonymous or pseudonymous form.</li>
-    </ul>
-    <p>This site does not currently use any advertising or retargeting cookies. If that changes in future, this policy will be updated to reflect it.</p>
+      <aside class="legal-toc reveal" aria-label="Contents">
+        <h2>On this page</h2>
+        <ol>
+          <li><a href="#what">What are cookies</a></li>
+          <li><a href="#this-site">How this site uses cookies</a></li>
+          <li><a href="#managing">Managing cookies</a></li>
+          <li><a href="#changes">Changes to this policy</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ol>
+      </aside>
 
-    <h2>Managing cookies</h2>
-    <p>You can control or delete cookies through your browser settings. Most browsers let you refuse cookies, delete existing cookies, or be notified when a new cookie is set. You can also opt out of Google Analytics specifically using Google's <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener">Analytics Opt-out Browser Add-on</a>.</p>
-    <p>Please note that blocking cookies may affect how parts of this site work.</p>
+      <div class="legal-body">
 
-    <h2>Changes to this policy</h2>
-    <p>I may update this policy from time to time as the tools used on this site change. Any changes will be posted on this page with an updated "last updated" date.</p>
+        <div class="summary reveal">
+          <h2>The short version</h2>
+          <ul>
+            <li>This site uses one type of cookie: analytics cookies from Google Analytics.</li>
+            <li>They help me see which pages are useful, so I can improve the site.</li>
+            <li>There are no advertising or retargeting cookies on this site at the moment.</li>
+            <li>You can block cookies in your browser, or opt out of Google Analytics.</li>
+          </ul>
+        </div>
 
-    <h2>Contact</h2>
-    <p>If you have any questions about this Cookie Policy, email <a href="mailto:alex_goss05@outlook.com">alex_goss05@outlook.com</a>. See also the <a href="/privacy-policy/">Privacy Policy</a> for more on how personal data is handled generally.</p>
+        <div class="legal-content" style="margin:0">
+          <h2 id="what">What are cookies</h2>
+          <p>Cookies are small text files placed on your device when you visit a website. They're widely used to make websites work more effectively, and to provide information to the site owner.</p>
+
+          <h2 id="this-site">How this site uses cookies</h2>
+          <p>This site uses the following types of cookies:</p>
+          <ul>
+            <li><strong>Analytics cookies (Google Analytics):</strong> these help me understand how visitors use the site, which pages are viewed, how long visitors stay, and how they found the site, so I can improve it. These cookies collect information in an anonymous or pseudonymous form.</li>
+          </ul>
+          <p>This site does not currently use any advertising or retargeting cookies. If that changes in future, this policy will be updated to reflect it.</p>
+
+          <h2 id="managing">Managing cookies</h2>
+          <p>You can control or delete cookies through your browser settings. Most browsers let you refuse cookies, delete existing cookies, or be notified when a new cookie is set. You can also opt out of Google Analytics specifically using Google's <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener">Analytics Opt-out Browser Add-on</a>.</p>
+          <p>Please note that blocking cookies may affect how parts of this site work.</p>
+
+          <h2 id="changes">Changes to this policy</h2>
+          <p>I may update this policy from time to time as the tools used on this site change. Any changes will be posted on this page with an updated "last updated" date.</p>
+
+          <h2 id="contact">Contact</h2>
+          <p>If you have any questions about this Cookie Policy, email <a href="mailto:alex_goss05@outlook.com">alex_goss05@outlook.com</a>. See also the <a href="/privacy-policy/">Privacy Policy</a> for more on how personal data is handled generally.</p>
+        </div>
+
+      </div>
+    </div>
   </div>
 </section>
 
+</main>
+
 <footer>
-  <div class="footer-top">
-    <div class="footer-logo">Alex Goss</div>
+  <div class="container">
+    <div class="footer-logo">Alex <span>Goss</span></div>
     <div class="footer-socials">
       <a href="https://www.linkedin.com/in/alex-goss-290b38336/" target="_blank" rel="noopener" aria-label="Alex Goss on LinkedIn">
-        <svg width="28" height="28" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <rect width="24" height="24" rx="4" fill="#0A66C2"/>
-          <path fill="#fff" d="M7.12 9.4H3.9v10.5h3.22V9.4ZM5.51 5c-1.1 0-1.82.72-1.82 1.67 0 .93.7 1.67 1.78 1.67h.02c1.12 0 1.82-.74 1.82-1.67C7.29 5.72 6.61 5 5.51 5ZM20.45 20h-3.55v-5.63c0-1.34-.02-3.06-1.87-3.06-1.87 0-2.16 1.46-2.16 2.96v5.73H9.32V9.4h3.4v1.44h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.46V20Z"/>
-        </svg>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7.12 9.4H3.9v10.5h3.22V9.4ZM5.51 5c-1.1 0-1.82.72-1.82 1.67 0 .93.7 1.67 1.78 1.67h.02c1.12 0 1.82-.74 1.82-1.67C7.29 5.72 6.61 5 5.51 5ZM20.45 20h-3.55v-5.63c0-1.34-.02-3.06-1.87-3.06-1.87 0-2.16 1.46-2.16 2.96v5.73H9.32V9.4h3.4v1.44h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.46V20Z"/></svg>
       </a>
       <a href="https://www.instagram.com/alexgoss.digital/" target="_blank" rel="noopener" aria-label="Alex Goss on Instagram">
-        <img src="/images/instagram.jpg" alt="Instagram" width="28" height="28" loading="lazy">
+        <img src="/images/instagram.jpg" alt="" width="20" height="20" loading="lazy">
       </a>
     </div>
+    <div class="footer-legal-links">
+      <a href="/privacy-policy/">Privacy Policy</a>
+      <a href="/cookie-policy/" aria-current="page">Cookie Policy</a>
+      <a href="/terms-and-conditions/">Terms &amp; Conditions</a>
+    </div>
+    <div class="copy">&copy; 2026 Alex Goss Digital Marketing. All rights reserved.</div>
   </div>
-  <div class="footer-legal-links">
-    <a href="/privacy-policy/">Privacy Policy</a>
-    <a href="/cookie-policy/">Cookie Policy</a>
-    <a href="/terms-and-conditions/">Terms &amp; Conditions</a>
-  </div>
-  <div>&copy; 2026 Alex Goss Digital Marketing. All rights reserved.</div>
 </footer>
 <script src="/script.js"></script>
 </body>

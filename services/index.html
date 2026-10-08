@@ -1,158 +1,223 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
-  <!-- Google tag (gtag.js) -->
+<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3C8ZMF64QB"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-3C8ZMF64QB');
 </script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Services | Alex Goss Digital Marketing</title>
 <meta name="description" content="Digital marketing services for small and growing businesses: social media management, SEO, Google Ads, Meta Ads, email marketing, CRM management, Shopify management, CRO and web analytics.">
-<meta name="keywords" content="digital marketing services, social media management, SEO services, Google Ads management, Meta Ads management, email marketing, e-shots, CRM management, Shopify management, conversion rate optimization, CRO, web analytics, marketing strategy consulting">
+<meta name="keywords" content="digital marketing services, social media management, SEO services, Google Ads management, Meta Ads management, email marketing, e-shots, CRM management, Shopify management, conversion rate optimisation, CRO, web analytics, marketing strategy consulting">
+<link rel="canonical" href="https://alex-goss.co.uk/services/">
 <link rel="stylesheet" href="/styles.css">
+<style>
+  /* Jump links (Services page only) */
+  .jump-links{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:28px}
+  .jump-links a{display:inline-block;padding:10px 20px;border-radius:999px;border:1.5px solid var(--accent-hover);font-family:var(--display);font-weight:600;font-size:.9rem;color:var(--heading);transition:background .25s,color .25s}
+  .jump-links a:hover{background:var(--gradient-btn);border-color:transparent;color:var(--onyx)}
+  .page-hero .jump-links a{color:var(--on-dark);text-decoration:none;border-color:rgba(240,240,240,.55);background:rgba(240,240,240,.08)}
+  .service-group{scroll-margin-top:110px}
+  .service-group + .service-group{margin-top:56px}
+  .group-head{display:flex;align-items:baseline;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:24px;padding-bottom:16px;border-bottom:1px solid var(--border)}
+  .group-head h2{font-size:clamp(1.7rem,3vw,2.2rem);margin:0}
+  .group-head p{margin:0;font-size:.95rem;max-width:44ch}
+</style>
 </head>
 <body>
-
 <header>
   <div class="container nav">
     <a href="/home/" class="logo">Alex <span>Goss</span></a>
-    <nav class="nav-links">
+    <nav class="nav-links" id="nav-links" aria-label="Main">
       <a href="/home/">Home</a>
-      <a href="/services/">Services</a>
+      <a href="/services/" aria-current="page">Services</a>
       <a href="/pricing/">Pricing</a>
       <a href="/experience/">Experience</a>
       <a href="/about-me/">About Me</a>
     </nav>
     <a href="/contact/" class="nav-button">Let's Talk</a>
-    <button class="menu-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
   </div>
 </header>
+
+<main id="main">
 
 <section class="page-hero">
   <div class="container">
     <span class="eyebrow">Services</span>
-    <h1>Digital marketing services built for small and growing businesses</h1>
-    <p>Nine core services, all available as an ongoing retainer or a one-off project to start. See <a href="/pricing/" style="color:var(--accent-hover); text-decoration:underline;">pricing</a> for retainer packages.</p>
+    <h1>Digital marketing built for small and growing businesses</h1>
+    <p>Twelve services, all available as an ongoing plan or as a one-off project to start. See <a href="/pricing/">pricing</a> for plan options and one-off costs.</p>
+    <nav class="jump-links" aria-label="Jump to a service group">
+      <a href="#paid">Paid &amp; search</a>
+      <a href="#social">Social &amp; content</a>
+      <a href="#email">Email &amp; sales tools</a>
+      <a href="#strategy">Strategy &amp; growth</a>
+    </nav>
   </div>
 </section>
 
-<section>
+<section style="padding-top:64px">
   <div class="container">
-    <div class="grid-3">
-      <div class="card">
-  <div class="card-header">
-    <div class="card-icon">🔍</div>
-    <h3>PPC / Paid Search</h3>
-  </div>
-  <p>I manage your Google/Bing Ads so you show up when people search for what you offer.</p>
-</div>
 
-      <div class="card">
-        <div class="card-header">
-        <div class="card-icon">📈</div>
-        <h3>CRO <span class="service-note">(Conversion Rate Optimisation)</span></h3>
-        </div>
-        <p>I test and tweak your website to increase the percentage of visitors who convert into leads or sales.</p>
+    <div class="service-group" id="paid">
+      <div class="group-head reveal">
+        <h2>Paid &amp; search</h2>
+        <p>Get found when people are ready to buy, and make every ad pound count.</p>
       </div>
-
-      <div class="card">
-        <div class="card-header">
-        <div class="card-icon">📢</div>
-        <h3>Paid Social Advertising</h3>
+      <div class="grid-3">
+        <div class="card reveal">
+          <div class="card-header">
+            <div class="card-icon" aria-hidden="true">🔍</div>
+            <h3>Google Ads (PPC)</h3>
+          </div>
+          <p>I manage your Google Ads campaigns so you show up when people search for what you offer.</p>
         </div>
-        <p>I run and optimize paid ad campaigns on social platforms to reach your target customers.</p>
-      </div>
-
-      <div class="card">
-        <div class="card-header">
-        <div class="card-icon">📱</div>
-        <h3>Social Media Management</h3>
+        <div class="card reveal d1">
+          <div class="card-header">
+            <div class="card-icon" aria-hidden="true">🎯</div>
+            <h3>Paid social advertising</h3>
+          </div>
+          <p>I run and optimise paid ad campaigns on Meta and other social platforms to reach your target customers.</p>
         </div>
-        <p>I manage your social accounts day-to-day, posting content and engaging your audience.</p>
-      </div>
-
-      <div class="card">
-        <div class="card-header">
-        <div class="card-icon">📊</div>
-        <h3>Analytics and Reporting</h3>
+        <div class="card reveal d2">
+          <div class="card-header">
+            <div class="card-icon" aria-hidden="true">🔎</div>
+            <h3>SEO <span class="service-note">Search engine optimisation</span></h3>
+          </div>
+          <p>I optimise your website and content so it ranks higher in search results and attracts more organic traffic.</p>
         </div>
-        <p>I track your marketing performance and turn the data into clear, actionable reports.</p>
       </div>
-
-      <div class="card">
-        <div class="card-header">
-        <div class="card-icon">📧</div>
-        <h3>Email Marketing</h3>
-        </div>
-        <p>I build newsletters and automated email sequences that nurture leads into customers.</p>
-      </div>
-
-      <div class="card">
-        <div class="card-header">
-        <div class="card-icon">🔍</div>
-        <h3>SEO <span class="service-note">(Search Engine Optimisation)</span></h3>
-        </div>
-        <p>I optimize your website and content so it ranks higher in search results and attracts more organic traffic.</p>
-      </div>
-
-      <div class="card">
-        <div class="card-header">
-        <div class="card-icon">✍️</div>
-        <h3>Content Marketing</h3>
-        </div>
-        <p>I create blog posts and other content that attracts your audience and builds your brand's authority.</p>
-      </div>
-
-      <div class="card">
-        <div class="card-header">
-        <div class="card-icon">🖋️</div>
-        <h3>Branding and Copywriting</h3>
-        </div>
-        <p>I craft your brand voice and write copy that speaks directly to your audience.</p>
-      </div>
-
     </div>
+
+    <div class="service-group" id="social">
+      <div class="group-head reveal">
+        <h2>Social &amp; content</h2>
+        <p>Consistent posting, content that's worth reading, and a brand voice people recognise.</p>
+      </div>
+      <div class="grid-3">
+        <div class="card reveal">
+          <div class="card-header">
+            <div class="card-icon" aria-hidden="true">📱</div>
+            <h3>Social media management</h3>
+          </div>
+          <p>I manage your social accounts day to day, posting content and engaging your audience.</p>
+        </div>
+        <div class="card reveal d1">
+          <div class="card-header">
+            <div class="card-icon" aria-hidden="true">✍️</div>
+            <h3>Content marketing</h3>
+          </div>
+          <p>I create blog posts and other content that attracts your audience and builds your brand's authority.</p>
+        </div>
+        <div class="card reveal d2">
+          <div class="card-header">
+            <div class="card-icon" aria-hidden="true">🖋️</div>
+            <h3>Branding and copywriting</h3>
+          </div>
+          <p>I craft your brand voice and write copy that speaks directly to your audience.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="service-group" id="email">
+      <div class="group-head reveal">
+        <h2>Email &amp; sales tools</h2>
+        <p>Keep in touch with the people who already know you, and turn enquiries into customers.</p>
+      </div>
+      <div class="grid-3">
+        <div class="card reveal">
+          <div class="card-header">
+            <div class="card-icon" aria-hidden="true">✉️</div>
+            <h3>Email marketing</h3>
+          </div>
+          <p>I build newsletters, e-shots and automated email sequences that nurture leads into customers.</p>
+        </div>
+        <div class="card reveal d1">
+          <div class="card-header">
+            <div class="card-icon" aria-hidden="true">⚙️</div>
+            <h3>CRM management</h3>
+          </div>
+          <p>I set up and manage your CRM and marketing automation, so leads are tracked and followed up without falling through the cracks.</p>
+        </div>
+        <div class="card reveal d2">
+          <div class="card-header">
+            <div class="card-icon" aria-hidden="true">🛒</div>
+            <h3>Shopify management</h3>
+          </div>
+          <p>I audit and set up your Shopify store, and keep its marketing and product pages working well for buyers.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="service-group" id="strategy">
+      <div class="group-head reveal">
+        <h2>Strategy &amp; growth</h2>
+        <p>Measure what's working, improve the site that sells, and agree where to focus next.</p>
+      </div>
+      <div class="grid-3">
+        <div class="card reveal">
+          <div class="card-header">
+            <div class="card-icon" aria-hidden="true">📈</div>
+            <h3>CRO <span class="service-note">Conversion rate optimisation</span></h3>
+          </div>
+          <p>I test and improve your website so more visitors become enquiries or sales.</p>
+        </div>
+        <div class="card reveal d1">
+          <div class="card-header">
+            <div class="card-icon" aria-hidden="true">📊</div>
+            <h3>Web analytics and reporting</h3>
+          </div>
+          <p>I set up tracking and turn your performance data into clear, actionable reports.</p>
+        </div>
+        <div class="card reveal d2">
+          <div class="card-header">
+            <div class="card-icon" aria-hidden="true">🧭</div>
+            <h3>Marketing strategy</h3>
+          </div>
+          <p>I audit where you are now and agree where to focus next, so every channel earns its place.</p>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
 
-<section>
+<section class="section-alt">
   <div class="container">
-    <div class="cta-banner reveal visible">
+    <div class="cta-banner reveal">
       <h2>Not sure what you need? That's completely normal.</h2>
-      <p>Most clients start with a free chat rather than a fixed brief. We'll talk through your goals and I'll recommend where to focus first.</p>
+      <p>Most clients start with a free chat rather than a fixed brief. We'll talk through your goals, and I'll recommend where to focus first.</p>
       <a href="/contact/" class="btn-primary">Book a free chat</a>
     </div>
   </div>
 </section>
+
+</main>
+
 <footer>
-  <div class="footer-top">
-    <div class="footer-logo">Alex Goss</div>
+  <div class="container">
+    <div class="footer-logo">Alex <span>Goss</span></div>
     <div class="footer-socials">
       <a href="https://www.linkedin.com/in/alex-goss-290b38336/" target="_blank" rel="noopener" aria-label="Alex Goss on LinkedIn">
-        <svg width="28" height="28" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <rect width="24" height="24" rx="4" fill="#0A66C2"/>
-          <path fill="#fff" d="M7.12 9.4H3.9v10.5h3.22V9.4ZM5.51 5c-1.1 0-1.82.72-1.82 1.67 0 .93.7 1.67 1.78 1.67h.02c1.12 0 1.82-.74 1.82-1.67C7.29 5.72 6.61 5 5.51 5ZM20.45 20h-3.55v-5.63c0-1.34-.02-3.06-1.87-3.06-1.87 0-2.16 1.46-2.16 2.96v5.73H9.32V9.4h3.4v1.44h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.46V20Z"/>
-        </svg>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7.12 9.4H3.9v10.5h3.22V9.4ZM5.51 5c-1.1 0-1.82.72-1.82 1.67 0 .93.7 1.67 1.78 1.67h.02c1.12 0 1.82-.74 1.82-1.67C7.29 5.72 6.61 5 5.51 5ZM20.45 20h-3.55v-5.63c0-1.34-.02-3.06-1.87-3.06-1.87 0-2.16 1.46-2.16 2.96v5.73H9.32V9.4h3.4v1.44h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.46V20Z"/></svg>
       </a>
       <a href="https://www.instagram.com/alexgoss.digital/" target="_blank" rel="noopener" aria-label="Alex Goss on Instagram">
-        <img src="/images/instagram.jpg" alt="Instagram" width="28" height="28" loading="lazy">
+        <img src="/images/instagram.jpg" alt="" width="20" height="20" loading="lazy">
       </a>
     </div>
+    <div class="footer-legal-links">
+      <a href="/privacy-policy/">Privacy Policy</a>
+      <a href="/cookie-policy/">Cookie Policy</a>
+      <a href="/terms-and-conditions/">Terms &amp; Conditions</a>
+    </div>
+    <div class="copy">&copy; 2026 Alex Goss Digital Marketing. All rights reserved.</div>
   </div>
-  <div class="footer-legal-links">
-    <a href="/privacy-policy/">Privacy Policy</a>
-    <a href="/cookie-policy/">Cookie Policy</a>
-    <a href="/terms-and-conditions/">Terms &amp; Conditions</a>
-  </div>
-  <div>&copy; 2026 Alex Goss Digital Marketing. All rights reserved.</div>
 </footer>
-
 <script src="/script.js"></script>
 </body>
 </html>

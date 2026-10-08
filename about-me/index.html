@@ -1,55 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
-  <!-- Google tag (gtag.js) -->
+<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3C8ZMF64QB"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-3C8ZMF64QB');
 </script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>About | Alex Goss Digital Marketing</title>
-<meta name="description" content="About Alex Goss, 21-year-old digital marketing consultant based in Worthing.">
+<meta name="description" content="About Alex Goss, a 21-year-old digital marketing consultant based in the UK, working with small and growing businesses on social media, SEO and paid ads.">
 <meta name="keywords" content="about Alex Goss, digital marketing consultant UK, freelance digital marketer, small business marketing partner">
+<link rel="canonical" href="https://alex-goss.co.uk/about-me/">
 <link rel="stylesheet" href="/styles.css">
+<style>
+  /* Career timeline (About page only) */
+  .timeline{position:relative;max-width:820px;margin:0;padding-left:44px;list-style:none}
+  .timeline::before{content:"";position:absolute;left:12px;top:8px;bottom:8px;width:2px;background:var(--gradient-btn);border-radius:2px}
+  .timeline li{position:relative;padding:0 0 40px}
+  .timeline li:last-child{padding-bottom:0}
+  .timeline li::before{content:"";position:absolute;left:-44px;top:6px;width:26px;height:26px;border-radius:50%;background:var(--surface);border:3px solid var(--accent-hover);box-shadow:0 0 0 6px var(--bg)}
+  .timeline .when{font-family:var(--display);font-size:.8rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent-deep);margin-bottom:6px;display:block}
+  .timeline h3{font-size:1.25rem;margin-bottom:8px}
+  .timeline p{font-size:1rem;max-width:62ch}
+  .intro-quote{font-family:var(--display);font-size:clamp(1.4rem,2.4vw,1.8rem);line-height:1.3;color:var(--heading);border-left:3px solid var(--accent-hover);padding-left:22px;margin:28px 0}
+</style>
 </head>
 <body>
 <header>
   <div class="container nav">
     <a href="/home/" class="logo">Alex <span>Goss</span></a>
-    <nav class="nav-links">
+    <nav class="nav-links" id="nav-links" aria-label="Main">
       <a href="/home/">Home</a>
       <a href="/services/">Services</a>
       <a href="/pricing/">Pricing</a>
       <a href="/experience/">Experience</a>
-      <a href="/about-me/">About Me</a>
+      <a href="/about-me/" aria-current="page">About Me</a>
     </nav>
     <a href="/contact/" class="nav-button">Let's Talk</a>
-    <button class="menu-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
   </div>
 </header>
 
+<main id="main">
+
 <section class="page-hero">
   <div class="container">
-    <span class="eyebrow">About Me</span>
+    <span class="eyebrow">About me</span>
     <h1>Hi, I'm Alex Goss</h1>
-    <p>A 21 years old. Running my own digital marketing business.</p>
+    <p>I'm 21 and I run my own digital marketing business, working hands-on with small and growing businesses.</p>
   </div>
 </section>
 
 <section>
   <div class="container about-inner">
-    <img src="/images/alex-photo.jpg" alt="Alex Goss" class="about-photo">
-    <div class="about-text">
-      <h2>Why I do this</h2>
-      <p>I started this business because I believe small and growing businesses deserve marketing that's thoughtful, honest, and actually tailored to them, not a one-size-fits-all package from a big agency with a rotating cast of account managers.</p>
-      <p>I'm 21, and I've spent the years since leaving school working in fast-paced, hands-on environments before ever calling myself a marketer, and I think that's exactly why I do this differently. I've had to earn trust quickly, learn on the job, and take ownership of real outcomes, not just tick boxes. That's the standard I hold my client work to as well.</p>
+    <img src="/images/alex-photo.jpg" alt="Alex Goss" class="about-photo reveal" loading="lazy">
+    <div class="about-text reveal">
+      <span class="eyebrow">Why I do this</span>
+      <p class="intro-quote">Marketing that's thoughtful, honest and built around your business, not a package from a big agency.</p>
+      <p>I started this business because I believe small and growing businesses deserve marketing that's tailored to them, not a one-size-fits-all package with a rotating cast of account managers.</p>
+      <p>I've spent the years since leaving school working in fast-paced, hands-on environments before ever calling myself a marketer. I think that's exactly why I do this differently. I've had to earn trust quickly, learn on the job and take ownership of real outcomes, not just tick boxes. That's the standard I hold my client work to as well.</p>
       <ul class="about-list">
-        <li>Direct, one-on-one collaboration, no account managers or hand-offs</li>
+        <li>Direct, one-on-one collaboration, with no account managers or hand-offs</li>
         <li>Clear reporting so you always know what's working</li>
         <li>Flexible engagements, from one-off projects to ongoing support</li>
       </ul>
@@ -62,18 +77,31 @@
     <div class="section-head reveal">
       <span class="eyebrow">My story so far</span>
       <h2>How I actually got here</h2>
+      <p>Each step taught me something I still use in client work, from design and code to operations and compliance.</p>
     </div>
-    <div class="who-inner">
-      <!-- TEMPORARY placeholder image — swap for a real stock/personal image -->
-      <div class="who-visual reveal">
-        <img src="/images/career.png" alt="A man writing in a notebook whilst learning from a laptop" loading="lazy">
-      </div>
-      <div class="who-text reveal">
-        <p>It started earlier than most people expect. During a school work placement at Virgin Atlantic, I was building web pages with HTML and Python and designing digital images for their site, my first real taste of the crossover between design, code, and marketing. That led me to a T Level in Digital Production, Design and Development at Chichester College, alongside a 315-hour internship at Patterson Dental, where I digitally designed crowns and bridges for dental practices, a strange but genuinely useful lesson in precision, client standards, and delivering technical work that has to be right first time.</p>
-        <p>Alongside my studies, I worked as a General Assistant at Out of Bounds, then spent a year and a half at McDonald's, where I was promoted from Crew Member to Shift Manager within three months, running shift plans, staff rotas, and income and expenditure while still a teenager. That grounding in operations and leadership under pressure carried straight into my next role.</p>
-        <p>At National Parking Control, alongside running SEO, PPC, email, and social media as the company's in-house Digital Marketer, I also took on IT support and compliance work, helping secure SafeContractor accreditation twice, leading efforts toward Great Place to Work certification, and contributing to the company reaching ISO 9001, ISO 14001, and Cyber Essentials Plus, plus national rankings including #12 in the UK's Best Workplaces 2026. It's given me a broader view of how a business actually runs, not just how it markets itself, which is exactly what I bring into freelance work now.</p>
-      </div>
-    </div>
+
+    <ol class="timeline">
+      <li class="reveal">
+        <span class="when">School work placement</span>
+        <h3>Virgin Atlantic</h3>
+        <p>Building web pages with HTML and Python and designing digital images for their site. My first real taste of the crossover between design, code and marketing.</p>
+      </li>
+      <li class="reveal">
+        <span class="when">Study</span>
+        <h3>T Level, Digital Production, Design and Development</h3>
+        <p>At Chichester College, alongside a 315-hour internship at Patterson Dental, where I digitally designed crowns and bridges for dental practices. A lesson in precision, client standards and technical work that has to be right first time.</p>
+      </li>
+      <li class="reveal">
+        <span class="when">Alongside my studies</span>
+        <h3>General Assistant, Out of Bounds, then McDonald's</h3>
+        <p>A year and a half at McDonald's, where I was promoted from Crew Member to Shift Manager within three months. I ran shift plans, staff rotas and income and expenditure while still a teenager.</p>
+      </li>
+      <li class="reveal">
+        <span class="when">Full-time role</span>
+        <h3>In-house Digital Marketer, National Parking Control</h3>
+        <p>Running SEO, PPC, email and social media, plus IT support and compliance work. I helped secure SafeContractor accreditation twice and contributed to the company reaching ISO 9001, ISO 14001 and Cyber Essentials Plus, and ranking #12 in the UK's Best Workplaces 2026.</p>
+      </li>
+    </ol>
   </div>
 </section>
 
@@ -83,26 +111,34 @@
       <span class="eyebrow">Fun facts</span>
       <h2>A few things people don't expect</h2>
     </div>
-    <div class="who-inner">
-      <div class="who-text reveal">
-        <ul class="about-list">
-          <li>Went from Crew Member to Shift Manager at McDonald's in just three months</li>
-          <li>Designed digital dental crowns and bridges before I ever wrote a line of marketing copy</li>
-          <li>Wrote my first lines of HTML and Python during a school work placement at Virgin Atlantic</li>
-          <li>Helped a former employer rank #12 in the UK's Best Workplaces 2026</li>
-        </ul>
+    <div class="grid-4">
+      <div class="card reveal">
+        <div class="card-icon" aria-hidden="true">🍟</div>
+        <h3 style="margin-top:18px">Three months to Shift Manager</h3>
+        <p>Went from Crew Member to Shift Manager at McDonald's in just three months.</p>
       </div>
-      <!-- TEMPORARY placeholder image — swap for a real stock/personal image -->
-      <div class="who-visual reveal">
-        <img src="/images/coding.png" alt="A man coding on a laptop" loading="lazy">
+      <div class="card reveal">
+        <div class="card-icon" aria-hidden="true">🦷</div>
+        <h3 style="margin-top:18px">Dental design first</h3>
+        <p>Designed digital dental crowns and bridges before I ever wrote a line of marketing copy.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon" aria-hidden="true">💻</div>
+        <h3 style="margin-top:18px">First lines of code</h3>
+        <p>Wrote my first HTML and Python during a school work placement at Virgin Atlantic.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon" aria-hidden="true">🏆</div>
+        <h3 style="margin-top:18px">Top 12 workplace</h3>
+        <p>Helped a former employer rank #12 in the UK's Best Workplaces 2026.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section>
+<section style="padding-top:0">
   <div class="container">
-    <div class="cta-banner">
+    <div class="cta-banner reveal">
       <h2>Let's work together</h2>
       <p>Tell me about your business and where you'd like it to go.</p>
       <a href="/contact/" class="btn-primary">Get in touch</a>
@@ -110,27 +146,26 @@
   </div>
 </section>
 
+</main>
+
 <footer>
-  <div class="footer-top">
-    <div class="footer-logo">Alex Goss</div>
+  <div class="container">
+    <div class="footer-logo">Alex <span>Goss</span></div>
     <div class="footer-socials">
       <a href="https://www.linkedin.com/in/alex-goss-290b38336/" target="_blank" rel="noopener" aria-label="Alex Goss on LinkedIn">
-        <svg width="28" height="28" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <rect width="24" height="24" rx="4" fill="#0A66C2"/>
-          <path fill="#fff" d="M7.12 9.4H3.9v10.5h3.22V9.4ZM5.51 5c-1.1 0-1.82.72-1.82 1.67 0 .93.7 1.67 1.78 1.67h.02c1.12 0 1.82-.74 1.82-1.67C7.29 5.72 6.61 5 5.51 5ZM20.45 20h-3.55v-5.63c0-1.34-.02-3.06-1.87-3.06-1.87 0-2.16 1.46-2.16 2.96v5.73H9.32V9.4h3.4v1.44h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.46V20Z"/>
-        </svg>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7.12 9.4H3.9v10.5h3.22V9.4ZM5.51 5c-1.1 0-1.82.72-1.82 1.67 0 .93.7 1.67 1.78 1.67h.02c1.12 0 1.82-.74 1.82-1.67C7.29 5.72 6.61 5 5.51 5ZM20.45 20h-3.55v-5.63c0-1.34-.02-3.06-1.87-3.06-1.87 0-2.16 1.46-2.16 2.96v5.73H9.32V9.4h3.4v1.44h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.46V20Z"/></svg>
       </a>
       <a href="https://www.instagram.com/alexgoss.digital/" target="_blank" rel="noopener" aria-label="Alex Goss on Instagram">
-        <img src="/images/instagram.jpg" alt="Instagram" width="28" height="28" loading="lazy">
+        <img src="/images/instagram.jpg" alt="" width="20" height="20" loading="lazy">
       </a>
     </div>
+    <div class="footer-legal-links">
+      <a href="/privacy-policy/">Privacy Policy</a>
+      <a href="/cookie-policy/">Cookie Policy</a>
+      <a href="/terms-and-conditions/">Terms &amp; Conditions</a>
+    </div>
+    <div class="copy">&copy; 2026 Alex Goss Digital Marketing. All rights reserved.</div>
   </div>
-  <div class="footer-legal-links">
-    <a href="/privacy-policy/">Privacy Policy</a>
-    <a href="/cookie-policy/">Cookie Policy</a>
-    <a href="/terms-and-conditions/">Terms &amp; Conditions</a>
-  </div>
-  <div>&copy; 2026 Alex Goss Digital Marketing. All rights reserved.</div>
 </footer>
 <script src="/script.js"></script>
 </body>
